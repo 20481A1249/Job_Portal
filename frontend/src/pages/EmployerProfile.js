@@ -29,7 +29,7 @@ const EmployerProfile = () => {
         <p>Company: {profile.profile?.company}</p>
         <p>Bio: {profile.profile?.bio}</p>
         {profile.profile?.logo ? (
-          <img src={`http://localhost:5000${profile.profile.logo}`} alt="Logo" className="w-20 h-20 mt-4" />
+          <img src={`https://job-portal-backend-njv6.onrender.com${profile.profile.logo}`} alt="Logo" className="w-20 h-20 mt-4" />
         ) : (
           <div className="w-20 h-20 bg-gray-300 rounded-full mt-4 flex items-center justify-center text-gray-600">No Logo</div>
         )}
