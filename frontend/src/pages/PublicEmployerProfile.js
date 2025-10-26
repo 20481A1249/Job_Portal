@@ -45,7 +45,7 @@ const PublicEmployerProfile = () => {
         <h1 className="text-3xl font-bold mb-6">Employer Profile</h1>
         <div className="flex items-center mb-6">
           {profile.profile?.logo ? (
-            <img src={`http://localhost:5000${profile.profile.logo}`} alt="Logo" className="w-20 h-20 rounded-full mr-4 object-cover" />
+            <img src={`https://job-portal-backend-njv6.onrender.com${profile.profile.logo}`} alt="Logo" className="w-20 h-20 rounded-full mr-4 object-cover" />
           ) : (
             <div className="w-20 h-20 bg-gray-300 rounded-full mr-4 flex items-center justify-center text-gray-600">No Logo</div>
           )}
