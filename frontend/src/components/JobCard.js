@@ -35,7 +35,7 @@ const JobCard = ({ job, appliedJobs, showButtons = true }) => {
       <p className="text-green-600 font-medium mb-4">Salary: {job.salary ? `₹${job.salary}` : 'Not specified'}</p>
       <div className={`mt-auto flex gap-2 ${showButtons ? '' : 'hidden'}`}>
         <Link
-          to={`/job/${job._id}`}
+          to={`/jobseeker/job/${job._id}`}
           className="flex-1 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors text-center"
         >
           View Details
