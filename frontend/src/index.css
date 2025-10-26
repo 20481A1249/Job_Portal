@@ -15,3 +15,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom Media Queries for Responsive Design */
+@media (max-width: 475px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+}
