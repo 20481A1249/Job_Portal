@@ -82,7 +82,7 @@ const JobDetails = () => {
           <p><strong>Salary:</strong> <span className="text-green-600 font-medium">{job.salary ? `₹${job.salary}` : 'Not specified'}</span></p>
           <p><strong>Type:</strong> {job.type}</p>
           <p><strong>Posted:</strong> {timeAgo(job.createdAt)}</p>
-          <p><strong>Employer:</strong> <Link to={`/employer-profile/${job.employer._id}`} className="text-blue-500 hover:underline">{job.employer.name}</Link></p>
+          <p><strong>Employer:</strong> <Link to={`/jobseeker/employer-profile/${job.employer._id}`} className="text-blue-500 hover:underline">{job.employer.name}</Link></p>
         </div>
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Description</h2>
