@@ -25,7 +25,7 @@ const EmployerLayout = () => {
           <div className="mb-6 flex items-center">
             {user?.profile?.logo ? (
               <img
-                src={`http://localhost:5000${user.profile.logo}`}
+                src={`https://job-portal-backend-njv6.onrender.com${user.profile.logo}`}
                 alt="Profile"
                 className="w-14 h-14 rounded-full mr-4 object-cover"
               />
