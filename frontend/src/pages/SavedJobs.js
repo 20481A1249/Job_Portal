@@ -29,7 +29,7 @@ const AppliedJobs = () => {
             <div className="flex items-center mb-4">
               {app.job.logo && (
                 <img
-                  src={`http://localhost:5000${app.job.logo}`}
+                  src={`https://job-portal-backend-njv6.onrender.com${app.job.logo}`}
                   alt={`${app.job.company} logo`}
                   className="w-13 h-14 rounded-full mr-4 object-cover"
                 />
