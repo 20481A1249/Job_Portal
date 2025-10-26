@@ -41,7 +41,7 @@ const ViewApplications = () => {
             <div className="flex items-center mb-4">
               {app.job.logo && (
                 <img
-                  src={`http://localhost:5000${app.job.logo}`}
+                  src={`https://job-portal-backend-njv6.onrender.com${app.job.logo}`}
                   alt={`${app.job.company} logo`}
                   className="w-13 h-14 rounded-full mr-4 object-cover"
                 />
@@ -53,7 +53,7 @@ const ViewApplications = () => {
             </div>
             <p className={`mb-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Email: {app.applicant.email}</p>
             <p className="mb-2">Status: <span className={`font-medium ${app.status === 'accepted' ? 'text-green-600' : app.status === 'rejected' ? 'text-red-600' : app.status === 'under review' ? 'text-yellow-600' : app.status === 'shortlisted' ? 'text-blue-600' : app.status === 'interview scheduled' ? 'text-purple-600' : 'text-gray-600'}`}>{app.status}</span></p>
-            <a href={`http://localhost:5000/api/applications/${app._id}/resume?token=${localStorage.getItem('token')}`} className={`underline ${darkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-500 hover:text-blue-700'}`} target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href={`https://job-portal-backend-njv6.onrender.com/api/applications/${app._id}/resume?token=${localStorage.getItem('token')}`} className={`underline ${darkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-500 hover:text-blue-700'}`} target="_blank" rel="noopener noreferrer">View Resume</a>
             <div className="mt-4 space-x-2">
               <button onClick={() => handleStatusChange(app._id, 'under review')} className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition-colors">Under Review</button>
               <button onClick={() => handleStatusChange(app._id, 'shortlisted')} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Shortlist</button>
