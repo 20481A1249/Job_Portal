@@ -49,7 +49,7 @@ const JobSeekerLayout = () => {
             />
             <label htmlFor="profilePictureInput" className="cursor-pointer">
               {user?.profile?.profilePicture ? (
-                <img src={`http://localhost:5000${user.profile.profilePicture}`} alt="Profile" className="w-12 h-12 rounded-full mr-4 object-cover" />
+                <img src={`https://job-portal-backend-njv6.onrender.com${user.profile.profilePicture}`} alt="Profile" className="w-12 h-12 rounded-full mr-4 object-cover" />
               ) : (
                 <div className="w-12 h-12 rounded-full mr-4 bg-gray-300 flex items-center justify-center text-gray-600">pic</div>
               )}
