@@ -73,12 +73,12 @@ const JobSeekerDashboard = () => {
     <div className={`min-h-screen p-6 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
       <div className="container mx-auto">
         <h1 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Job Seeker Dashboard</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          <div className="lg:col-span-1">
+        <div className="grid grid-cols-1 tablet:grid-cols-4 lg:grid-cols-4 gap-6">
+          <div className="tablet:col-span-1 lg:col-span-1">
             <FilterContent filters={filters} onFilterChange={setFilters} />
           </div>
-          <div className="lg:col-span-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="tablet:col-span-3 lg:col-span-3">
+            <div className="grid grid-cols-1 tablet:grid-cols-2 gap-6">
               {filteredJobs.map(job => (
                 <JobCard key={job._id} job={job} onApply={handleApply} appliedJobs={appliedJobs} />
               ))}
