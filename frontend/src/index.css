@@ -18,6 +18,11 @@ code {
 
 /* Custom Media Queries for Responsive Design */
 @media (max-width: 475px) {
+  .Toastify__toast {
+    min-width: 220px !important;
+    width: 220px !important;
+    font-size: 12px !important;
+  }
   body {
     font-size: 14px;
   }
