@@ -40,8 +40,8 @@ function App() {
                 <Route path="dashboard" element={<JobSeekerDashboard />} />
                 <Route path="saved-jobs" element={<AppliedJobs />} />
                 <Route path="profile" element={<UpdateJobSeekerProfile />} />
-                <Route path="/job/:id" element={<JobDetails />} />
-                <Route path="/employer-profile/:id" element={<PublicEmployerProfile />} />
+                <Route path="job/:id" element={<JobDetails />} />
+                <Route path="employer-profile/:id" element={<PublicEmployerProfile />} />
               </Route>
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
