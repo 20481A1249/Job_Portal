@@ -36,7 +36,7 @@ const EmployerDashboard = () => {
   return (
     <div>
       <h1 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Employer Dashboard</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 tablet:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         <div className={`p-4 rounded shadow ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
           <h2 className="text-xl font-semibold">Total Jobs</h2>
           <p className="text-2xl">{stats.jobs}</p>
@@ -52,7 +52,7 @@ const EmployerDashboard = () => {
       </div>
 
       <h2 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Your Job Postings</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 tablet:grid-cols-2 lg:grid-cols-3 gap-6">
         {jobs.map(job => (
           <JobCard key={job._id} job={job} appliedJobs={[]} showButtons={false} />
         ))}
