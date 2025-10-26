@@ -12,7 +12,7 @@ const JobCard = ({ job, appliedJobs, showButtons = true }) => {
   const hasApplied = appliedJobs.some(app => app.job._id === job._id);
 
   const handleApply = () => {
-    navigate(`/job/${job._id}`);
+    navigate(`/jobseeker/job/${job._id}`);
   };
 
   return (
