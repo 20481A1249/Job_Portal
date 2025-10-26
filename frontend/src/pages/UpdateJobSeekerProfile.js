@@ -103,7 +103,7 @@ const UpdateJobSeekerProfile = () => {
         <p>Bio: {profile.profile?.bio}</p>
         <p>Skills: {profile.profile?.skills?.join(', ')}</p>
         <p>Experience: {profile.profile?.experience}</p>
-        <p>Resume: {profile.profile?.resume ? <a href={`http://localhost:5000${profile.profile.resume}`} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">View/Download Resume</a> : 'No resume uploaded'}</p>
+        <p>Resume: {profile.profile?.resume ? <a href={`https://job-portal-backend-njv6.onrender.com${profile.profile.resume}`} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">View/Download Resume</a> : 'No resume uploaded'}</p>
       </div>
       <div className={`min-h-screen p-6 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
         <h1 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Update Profile</h1>
