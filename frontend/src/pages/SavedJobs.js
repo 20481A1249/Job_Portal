@@ -22,7 +22,7 @@ const AppliedJobs = () => {
 
   return (
     <div className={`min-h-screen p-6 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
-      <h1 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Saved Jobs</h1>
+      <h1 className={`text-3xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Applied Jobs</h1>
       <div className="space-y-4">
         {applications.map(app => (
           <div key={app._id} className={`p-4 rounded shadow hover:shadow-lg transition-shadow ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
