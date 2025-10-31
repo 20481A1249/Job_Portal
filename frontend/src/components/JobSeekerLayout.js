@@ -131,7 +131,7 @@ const JobSeekerLayout = () => {
               to="/jobseeker/saved-jobs"
               className={`block px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition-colors ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}
             >
-              Saved Jobs
+              Applied Jobs
             </Link>
             <Link
               to="/jobseeker/profile"
